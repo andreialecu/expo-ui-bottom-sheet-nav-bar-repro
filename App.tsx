@@ -19,6 +19,8 @@ export default function App() {
           enablePanDownToClose
           onClose={() => setOpen(false)}
           snapPoints={['50%', '100%']}
+          // A loud container color, so the strip under the list stands out.
+          backgroundStyle={{ backgroundColor: '#ff8a00' }}
         >
           <BottomSheetScrollView>
             {ROWS.map((row) => (
